@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_runningscheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/modelbk" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@android:color/transparent"
+        android:orientation="vertical" >
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50sp" >
+
+            <TextView
+                android:id="@+id/txt_speed_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg_press"
+                android:gravity="center"
+                android:text="速度控制"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_heartrate_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:text="心率图"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_comprehensive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:text="综合"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="速度控制图"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:orientation="vertical" >
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+              <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当时间达60分钟以上，可查看运动模型"
+                android:textColor="#ffffff"
+                android:layout_marginTop="0dp"
+                 android:layout_marginLeft="20dp" />
+               
+        </LinearLayout>
+       
+    </LinearLayout>
+
+</FrameLayout>

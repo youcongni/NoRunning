@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/modelbk"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:orientation="vertical" >
+
+        <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="30dip">
+            <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+           
+            android:layout_marginTop="5dp"
+            android:text="0.00"
+             android:textColor="#FF0000" 
+            android:textSize="20dp" />
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="KM"
+                 android:textColor="#FF0000" 
+                 android:layout_marginTop="5dp"
+                 android:textSize="20dp"
+                  />
+             
+        </LinearLayout>
+
+       
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+           >
+<ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="33dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/alert3" />
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="用时"
+                android:textColor="#FF0000" 
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="55dip"
+                 android:layout_gravity="center"
+               
+                android:src="@drawable/heartrate3" />
+
+             <TextView
+                android:id="@+id/tv_Heartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="心率:次/分"
+                android:textColor="#FF0000" 
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+      
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+           
+			 <Chronometer
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="90dp"
+             
+                
+                
+                android:textColor="#FF0000" 
+                android:textSize="20dp" 
+              />
+             <TextView
+                android:id="@+id/tv_Heartrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                 android:layout_marginLeft="120dp"
+                android:text="00"
+                android:textColor="#FF0000" 
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+               android:layout_width="50dip"
+                android:layout_height="25dip"
+                android:layout_gravity="center"
+                android:layout_marginLeft="33dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/clock3" />
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="时速:m/s"
+                android:layout_marginLeft="0dp"
+                android:textColor="#FF0000" 
+                android:textSize="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+               android:layout_width="40dip"
+                android:layout_height="25dip"
+                android:layout_marginLeft="8dip"
+                 android:layout_gravity="center"
+               
+                android:src="@drawable/run3" />
+
+             <TextView
+                android:id="@+id/tv_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="卡路里"
+                android:textColor="#FF0000" 
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_speeds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="0.0"
+                android:layout_marginLeft="90dp"
+                android:textColor="#FF0000" 
+                android:textSize="20dp"
+                />
+
+             <TextView
+                android:id="@+id/tv_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                 android:layout_marginLeft="120dp"
+                android:text="00"
+                android:textColor="#FF0000" 
+                android:textSize="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical" >
+
+         
+
+    </LinearLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/btn_finish_running"
+             android:layout_width="150dip"
+             android:layout_height="36dp"
+             android:background="#FF0000"
+             android:text="跑步结束"
+ 
+             android:layout_marginTop="20dip"
+             android:layout_gravity="center"
+             android:textColor="@color/white"
+             android:textSize="30sp" />
+
+     </LinearLayout>
+         
+     </RelativeLayout>
+    
+</LinearLayout>

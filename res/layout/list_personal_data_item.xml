@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_record_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            
+            android:id="@+id/txt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2014-5-11 19:47:30"
+            android:drawablePadding="10sp"
+            android:paddingLeft="10sp"
+            android:paddingTop="20sp"
+            android:paddingBottom="20sp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/home_stats_run_symbol" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:paddingTop="18sp"
+             android:paddingRight="20sp"
+            android:src="@drawable/activitylist_header_item_fuel_symbol" />
+
+        <TextView
+            android:id="@+id/txt_run"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:gravity="center_vertical"
+            android:paddingBottom="20sp"
+            android:paddingTop="24.5sp"
+            android:text="3km"
+            android:paddingRight="5sp"
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

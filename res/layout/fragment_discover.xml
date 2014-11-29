@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/half_transparent_bg" >
+
+                    <TextView
+                        android:id="@+id/tv_calendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:drawablePadding="5sp"
+                        android:gravity="center"
+                        android:paddingBottom="5sp"
+                        android:paddingLeft="10sp"
+                        android:paddingTop="5sp"
+                        android:text="2014-3-23 16:00PM"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:drawableLeft="@drawable/ic_location"
+                        android:drawablePadding="5sp"
+                        android:gravity="center"
+                        android:paddingBottom="5sp"
+                        android:paddingRight="30sp"
+                        android:paddingTop="5sp"
+                        android:text="闽侯县"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="18dp"
+                        android:layout_marginTop="19dp"
+                        android:src="@drawable/ic_star" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50sp" >
+
+                <TextView
+                    android:id="@+id/txt_day"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_bg_press"
+                    android:gravity="center"
+                    android:text="Day"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:text="Week"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txt_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:text="Month"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white" >
+            </LinearLayout>
+        </LinearLayout>
+
+</FrameLayout>

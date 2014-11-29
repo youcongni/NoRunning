@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidui_sample_demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+	<uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+	
+    <application
+        android:name="app.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo4"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+        
+        <activity
+            android:name="ui.statisticsDisplay.activity.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.WelcomeActivity"
+            android:label="@string/app_name"
+             android:theme="@android:style/Theme.Holo.NoActionBar">  
+            
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ui.statisticsDisplay.activity.DeviceScanActivity"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="ui.statisticsDisplay.activity.DeviceControlActivity"
+            	android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.TestActivity"
+            android:label="@string/app_name" 
+            >
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.PersonalInfoActivity"
+            android:label="@string/app_name"
+            > 
+        </activity>
+         <activity
+            android:name="ui.statisticsDisplay.activity.FriendsListActivity"
+            android:label="@string/app_name"
+            > 
+        </activity>
+         <activity
+            android:name="ui.statisticsDisplay.activity.FriendsMessageActivity"
+            android:label="@string/app_name"
+            > 
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.ThirdActivity"
+            android:label="@string/app_name" 
+           >
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.PersonaldataActivity"
+            android:label="@string/app_name" 
+           >
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.PersonalrunningrecordActivity"
+            android:label="@string/app_name"
+           > 
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.CountdownRunningActivity"
+            android:label="@string/app_name" 
+           >
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.BrewClockActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+            > 
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.AlertActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+            > 
+        </activity>
+         <activity
+            android:name="ui.statisticsDisplay.activity.RunningActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+        
+          <activity
+            android:name="ui.statisticsDisplay.activity.SettingActivity"
+            android:label="@string/app_name" 
+             >
+        </activity>
+          <activity
+            android:name="ui.statisticsDisplay.activity.AddFriendsActivity"
+            android:label="@string/app_name" 
+             >
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.HistoryActivity"
+            android:label="@string/app_name" 
+             >
+        </activity>
+        <activity
+            android:name="ui.statisticsDisplay.activity.HistoryActivitybyone"
+            android:label="@string/app_name" 
+             >
+        </activity>
+        <activity
+            android:name="ui.systemManaConfig.activity.MusicActivity"
+            android:label="@string/app_name" 
+             >
+        </activity>
+        
+         <activity
+            android:name="ui.statisticsDisplay.activity.ShareActivity"
+            android:label="@string/app_name" 
+             >
+        </activity>
+         <activity
+            android:name="ui.community.FriendNewsActivity"
+            android:label="@string/app_name" 
+             >
+        </activity>
+         <activity
+            android:name="ui.systemManaConfig.activity.LoginActivity"
+            android:label="@string/app_name" 
+             >
+        </activity> <activity
+            android:name="ui.systemManaConfig.activity.RegisterActivity"
+            android:label="@string/app_name" 
+             >
+        </activity>
+        <service android:name="foundation.ble.BLEService" android:enabled="true"/>
+        <service android:name="foundation.speed.step.StepService" android:enabled="true"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+  
+</manifest>

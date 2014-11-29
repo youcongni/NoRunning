@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+      <item
+        android:id="@+id/personalinfo"
+        android:title="个人信息"
+        android:icon="@drawable/ic_three"
+      >
+    </item>
+      
+     <item
+        android:id="@+id/history"
+        android:icon="@drawable/history"
+        android:title="历史记录"
+      
+        >
+    </item>
+   
+     <item
+        android:id="@+id/friend"
+        android:icon="@drawable/friend"
+        android:title="我的好友"
+      
+       >
+    </item>
+       
+      <item
+        android:id="@+id/friendnews"
+        android:icon="@drawable/dongtai"
+        android:title="好友动态"
+      
+      >
+    </item>
+    
+      
+</menu>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<domain.statisticsDisplay.ClearEditText
+        android:id="@+id/filter_edit"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="用户名/关键字"
+        android:singleLine="true"
+        android:textSize="25sp" />
+<FrameLayout
+   	 	android:id="@+id/frameLayoutOfAddFriends"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:background="@drawable/start_running_title">
+		
+       <domain.statisticsDisplay.PullRefreshListView
+        android:id="@+id/pullRefreshListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+    </domain.statisticsDisplay.PullRefreshListView>
+
+        
+    </FrameLayout>
+</LinearLayout>

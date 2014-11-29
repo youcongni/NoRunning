@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/menubg5"
+    
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_user_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                  
+                    android:drawablePadding="10sp"
+                    android:drawableTop="@drawable/picture2"
+                    android:gravity="center"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/home"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                  
+                    android:drawableLeft="@drawable/ic_one"
+                    android:drawablePadding="13sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15sp"
+                    android:text="首页"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                
+            </LinearLayout>
+            
+ 			<LinearLayout
+                android:id="@+id/running_model"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_running_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0.1sp"
+               
+                    android:drawableLeft="@drawable/ic_four"
+                    android:drawablePadding="13sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15sp"
+                    android:text="运动模型"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/running_scheme"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_running_scheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0.1sp"
+                  
+                    android:drawableLeft="@drawable/ic_five"
+                    android:drawablePadding="13sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15sp"
+                    android:text="运动方案"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+           
+
+           
+
+            <LinearLayout
+                 android:id="@+id/mine"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0.1sp"
+               
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="13sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15sp"
+                    android:text="我"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0.1sp"
+                 
+                    android:drawableLeft="@drawable/ic_seven"
+                    android:drawablePadding="13sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15sp"
+                    android:text="退出"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <LinearLayout    
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dip">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="20dip"
+      android:text="提醒: " />
+    
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:padding="10dip" >
+
+      
+
+      <TextView
+          android:id="@+id/brew_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="10dip"
+          android:text="目标时间到了"
+          android:textSize="40dip" />
+
+      
+  </LinearLayout>
+
+  <Button
+    android:id="@+id/brew_confirm"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:text="确定" />
+</LinearLayout>

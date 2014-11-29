@@ -1,0 +1,163 @@
+#
+# generated on 2014/10/20 02:35:56
+#
+# --table-start--
+dataClass=domain.dataCollect.MinuteSportData
+tableName=T_MinuteSportData
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=number
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=speed
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=heartRate
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=collectTime
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=oneSport
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=domain.dataCollect.OneSport
+tableName=T_OneSport
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=date
+columnName=date
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=startTime
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=endTime
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=count
+columnName=count
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=minuteSportDatas
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=domain.systemManaConfig.Friends
+tableName=T_Friends
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=email
+columnName=email
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=nickName
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=protrait
+dataPersister=BYTE_ARRAY
+columnDefinition=LONGBLOB not null
+# --field-end--
+# --field-start--
+fieldName=anotherName
+# --field-end--
+# --field-start--
+fieldName=personalWord
+# --field-end--
+# --field-start--
+fieldName=oneAndMoreUser
+columnName=oneAndMoreUser
+canBeNull=false
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=oneAndOneUser
+canBeNull=false
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=domain.systemManaConfig.User
+tableName=T_User
+# --table-fields-start--
+# --field-start--
+fieldName=email
+id=true
+# --field-end--
+# --field-start--
+fieldName=password
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=nickName
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=sex
+# --field-end--
+# --field-start--
+fieldName=city
+# --field-end--
+# --field-start--
+fieldName=height
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=weight
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=birthday
+# --field-end--
+# --field-start--
+fieldName=protrait
+dataPersister=BYTE_ARRAY
+columnDefinition=LONGBLOB not null
+# --field-end--
+# --field-start--
+fieldName=personalword
+# --field-end--
+# --field-start--
+fieldName=isLogin
+columnName=isLogin
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=friends
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

@@ -1,0 +1,115 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=17884, tid=23300
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_45-b18) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (24.45-b08 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002f50800):  JavaThread "Unknown thread" [_thread_in_vm, id=23300, stack(0x0000000002da0000,0x0000000002ea0000)]
+
+Stack: [0x0000000002da0000,0x0000000002ea0000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002f50800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=23300, stack(0x0000000002da0000,0x0000000002ea0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.028 loading class 0x0000000002f96b70 done
+Event: 0.028 loading class 0x0000000002f96590 done
+Event: 0.028 loading class 0x0000000002f96570
+Event: 0.029 loading class 0x0000000002f9e670
+Event: 0.029 loading class 0x0000000002f9e670 done
+Event: 0.029 loading class 0x0000000002f9e6a0
+Event: 0.029 loading class 0x0000000002f9e6a0 done
+Event: 0.029 loading class 0x0000000002f9e6d0
+Event: 0.029 loading class 0x0000000002f9e6d0 done
+Event: 0.029 loading class 0x0000000002f96570 done
+
+
+Dynamic libraries:
+0x000007f667ab0000 - 0x000007f667ae3000 	C:\Program Files\Java\jdk1.7.0_45\bin\javaw.exe
+0x000007f9f9880000 - 0x000007f9f9a3e000 	C:\Windows\SYSTEM32\ntdll.dll
+0x000007f9f94b0000 - 0x000007f9f95e7000 	C:\Windows\system32\KERNEL32.DLL
+0x000007f9f6480000 - 0x000007f9f6574000 	C:\Windows\system32\KERNELBASE.dll
+0x000007f9f88d0000 - 0x000007f9f89ae000 	C:\Windows\system32\ADVAPI32.dll
+0x000007f9f8fe0000 - 0x000007f9f912c000 	C:\Windows\system32\USER32.dll
+0x000007f9f3f30000 - 0x000007f9f419a000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.16579_none_418ab7ef718b27ef\COMCTL32.dll
+0x000007f9f9200000 - 0x000007f9f92a5000 	C:\Windows\system32\msvcrt.dll
+0x000007f9f9410000 - 0x000007f9f9458000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007f9f6990000 - 0x000007f9f6ad5000 	C:\Windows\system32\RPCRT4.dll
+0x000007f9f8d50000 - 0x000007f9f8e91000 	C:\Windows\system32\GDI32.dll
+0x000007f9f8ac0000 - 0x000007f9f8af9000 	C:\Windows\system32\IMM32.DLL
+0x000007f9f6bd0000 - 0x000007f9f6ce6000 	C:\Windows\system32\MSCTF.dll
+0x000007f9f3c10000 - 0x000007f9f3c41000 	C:\Windows\system32\nvinitx.dll
+0x000000000f000000 - 0x000000000f006000 	C:\Program Files\NVIDIA Corporation\CoProcManager\detoured.dll
+0x000007f9f3b30000 - 0x000007f9f3b8f000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvd3d9wrapx.dll
+0x000007f9f70a0000 - 0x000007f9f7270000 	C:\Windows\system32\SETUPAPI.dll
+0x000007f9f6620000 - 0x000007f9f666f000 	C:\Windows\system32\CFGMGR32.dll
+0x000007f9f65f0000 - 0x000007f9f6612000 	C:\Windows\system32\DEVOBJ.dll
+0x000007f9f3a50000 - 0x000007f9f3a96000 	C:\Program Files\NVIDIA Corporation\CoProcManager\nvdxgiwrapx.dll
+0x0000000076a50000 - 0x0000000076b22000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\msvcr100.dll
+0x0000000074ad0000 - 0x0000000075299000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\server\jvm.dll
+0x000007f9f0db0000 - 0x000007f9f0db9000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x000007f9f6720000 - 0x000007f9f6740000 	C:\Windows\system32\WINMM.dll
+0x000007f9f8eb0000 - 0x000007f9f8eb7000 	C:\Windows\system32\PSAPI.DLL
+0x000007f9f8f80000 - 0x000007f9f8fd8000 	C:\Windows\system32\WS2_32.dll
+0x000007f9f6420000 - 0x000007f9f6453000 	C:\Windows\system32\WINMMBASE.dll
+0x000007f9f7270000 - 0x000007f9f7279000 	C:\Windows\system32\NSI.dll
+0x0000000076a40000 - 0x0000000076a4f000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\verify.dll
+0x0000000076a10000 - 0x0000000076a38000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\java.dll
+0x00000000769f0000 - 0x0000000076a05000 	C:\Program Files\Java\jdk1.7.0_45\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\360安全浏览器下载\android-sdk-windows\android-sdk-windows\platforms\android-19\android.jar 
+java_command: foundation.dataService.util.DatabaseConfigUtil
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.7.0_45
+CLASSPATH=.;C:\Program Files\Java\jdk1.7.0_45\lib\tools.jar;C:\Program Files\Java\jdk1.7.0_45\lib\dt.jar;C:\Program Files\Java\jdk1.7.0_45\bin;
+PATH=C:/Program Files/Java/jdk1.7.0_45/bin/../jre/bin/server;C:/Program Files/Java/jdk1.7.0_45/bin/../jre/bin;C:/Program Files/Java/jdk1.7.0_45/bin/../jre/lib/amd64;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\360安全浏览器下载\android-sdk-windows\android-sdk-windows\tools;D:\360安全浏览器下载\android-sdk-windows\android-sdk-windows\platform-tools;D:\360安全浏览器下载\163disk.com_eclipse-SDK-3.7.2-win64\eclipse;
+USERNAME=dcl
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, erms, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 4077180k(1453796k free), swap 6829692k(1724548k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (24.45-b08) for windows-amd64 JRE (1.7.0_45-b18), built on Oct  8 2013 05:47:22 by "java_re" with unknown MS VC++:1600
+
+time: Wed Jul 16 17:38:54 2014
+elapsed time: 0 seconds
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_bg"
+    android:orientation="vertical" >
+
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginTop="5sp" 
+        android:background="@color/lavenderblush"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_distanceForDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:paddingTop="5sp"
+             android:paddingLeft="12sp"
+             android:paddingBottom="5sp"
+            android:text="2.23"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:background="@color/lavenderblush"
+            
+            android:ems="10" >
+
+            <requestFocus />
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_avgSpeedForDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5m"
+            android:gravity="center"
+             android:paddingTop="5sp"
+             android:paddingBottom="5sp"
+            android:textSize="17sp"
+           android:textColor="@color/black"
+           android:background="@color/lavenderblush"
+            
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/tv_avgHeartRateForDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:text="100"
+              android:paddingTop="5sp"
+             android:paddingBottom="5sp"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/lavenderblush"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:text="上午10:00"
+             android:paddingTop="5sp"
+             android:paddingBottom="5sp"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+          android:background="@color/lavenderblush"
+            android:ems="10" />
+
+    </LinearLayout>
+    
+</RelativeLayout>
